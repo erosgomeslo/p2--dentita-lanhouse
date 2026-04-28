@@ -2,7 +2,7 @@
 
 Uma landing page premium e moderna para um centro integrado que une um **Consultório Odontológico** e um **Espaço Coworking/Lan House**.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - **Design Premium**: Interface moderna com efeitos de Glassmorphism e animações suaves.
 - **Seção Hero**: Fundo fotográfico de alta qualidade com CTAs claros.
@@ -10,7 +10,7 @@ Uma landing page premium e moderna para um centro integrado que une um **Consult
 - **Responsividade**: Totalmente adaptado para dispositivos móveis e desktops.
 - **SEO Otimizado**: Estrutura semântica para melhor ranqueamento.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **HTML5** & **CSS3**
 - **Tailwind CSS** (via CDN)
@@ -18,23 +18,15 @@ Uma landing page premium e moderna para um centro integrado que une um **Consult
 - **Google Fonts** (Inter)
 - **Lucide Icons** (SVG)
 
-## 🎮 O Jogo Pac-Man
+##  O mini-Jogo
 
-O jogo possui:
+Ele possui:
 - Movimentação por setas do teclado.
-- Fantasmas inteligentes com movimentação aleatória.
+- bots com movimentação aleatória.
 - Detecção de colisão (Game Over automático).
-- Gráficos em Canvas com estética Neon.
+- Gráficos em estética Neon.
 
-## 📦 Como Publicar
-
-Para subir as alterações para o seu GitHub, execute:
-
-```powershell
-git push -u origin main
-```
-
-## ✒️ Autor
+##  Autor
 
 - **Desenvolvedor**: [Seu Nome/Eros Gomes]
 - **Repositório**: [GitHub](https://github.com/erosgomeslo/p2--dentita-lanhouse.git)
