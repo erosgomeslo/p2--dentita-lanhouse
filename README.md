@@ -1,14 +1,8 @@
-# Landing Page Integrada - Odontologia & Tech
-
-Uma landing page premium e moderna para um centro integrado que une um **Consultório Odontológico** e um **Espaço Coworking/Lan House**.
-
 ##  Funcionalidades
 
-- **Design Premium**: Interface moderna com efeitos de Glassmorphism e animações suaves.
-- **Seção Hero**: Fundo fotográfico de alta qualidade com CTAs claros.
-- **Jogo Pac-Man**: Mini-game interativo integrado diretamente na página para entretenimento.
+- **Design**: Interface moderna com efeitos de Glassmorphism e animações suaves.
+- **Mini-game**: Mini-game interativo integrado diretamente na página para entretenimento.
 - **Responsividade**: Totalmente adaptado para dispositivos móveis e desktops.
-- **SEO Otimizado**: Estrutura semântica para melhor ranqueamento.
 
 ##  Tecnologias Utilizadas
 
@@ -28,5 +22,5 @@ Ele possui:
 
 ##  Autor
 
-- **Desenvolvedor**: [Seu Nome/Eros Gomes]
+- **Desenvolvedor**: Eros Gomes
 - **Repositório**: [GitHub](https://github.com/erosgomeslo/p2--dentita-lanhouse.git)
