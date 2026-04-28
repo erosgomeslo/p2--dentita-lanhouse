@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro Integrado – Odontologia & Tech</title>
+  <meta name="description" content="Centro integrado de odontologia e coworking – saúde bucal e conexão digital em um só lugar." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            turquoise: '#00ffef',
+            deepblue: '#0d1b2a',
+            neon: '#00ffef',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-inter bg-gradient-to-b from-deepblue via-deepblue to-white text-gray-100">
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-deepblue opacity-70"></div>
+    <div class="relative text-center p-8 max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6" data-animate="fade-in">
+        Sua saúde bucal e sua conexão em dia
+      </h1>
+      <p class="text-lg text-gray-200 mb-8" data-animate="fade-in">
+        O melhor sorriso e a melhor internet, tudo no mesmo endereço.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4" data-animate="fade-in">
+        <a href="#" class="px-6 py-3 bg-turquoise text-deepblue font-semibold rounded-full hover:bg-turquoise-600 transition">Agendar Consulta</a>
+        <a href="#" class="px-6 py-3 bg-white text-deepblue font-semibold rounded-full hover:bg-gray-100 transition">Reservar Estação de Jogos/PC</a>
+        <button id="play-game" class="px-6 py-3 bg-turquoise text-deepblue font-semibold rounded-full hover:bg-turquoise-600 transition ml-4">Jogar Pac‑Man</button>
+      </div>
+      <div id="game-container" class="hidden mt-8">
+        <canvas id="gameCanvas" width="400" height="400" class="mx-auto bg-black border-2 border-turquoise"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="py-16 bg-white text-deepblue" id="servicos">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12" data-animate="fade-in">Nossos Serviços</h2>
+      <div class="grid gap-8 md:grid-cols-2" data-animate="fade-in">
+        <!-- Odontologia -->
+        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Odontologia</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Clínica Geral</li>
+            <li>Estética Dental</li>
+            <li>Ortodontia</li>
+          </ul>
+        </div>
+        <!-- Tech / Lan -->
+        <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Tech / Lan House</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Internet Fibra Gamer</li>
+            <li>Impressão de Documentos</li>
+            <li>Estações de Trabalho</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-16 bg-gray-50 text-deepblue" id="sobre">
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-8">
+      <div class="lg:w-1/2" data-animate="fade-in">
+        <h2 class="text-3xl font-bold mb-4">Sobre o Profissional</h2>
+        <p class="mb-4">
+          Dr. João Silva, dentista com mais de 15 anos de experiência, une sua paixão pela saúde bucal à visão de futuro digital. Seu objetivo é proporcionar aos pacientes um ambiente onde a espera se transforma em produtividade: enquanto o tratamento avança, você pode trabalhar, estudar ou se divertir no andar superior.
+        </p>
+        <p>
+          A combinação de tecnologia de ponta e cuidados odontológicos de excelência cria uma experiência única, que reúne conforto, eficiência e inovação.
+        </p>
+      </div>
+      <div class="lg:w-1/2" data-animate="fade-in">
+        <img src="https://images.unsplash.com/photo-1606497308363-5d1c9c2ef2c8?auto=format&fit=crop&w=600&q=80" alt="Dr. João Silva" class="rounded-xl shadow-lg w-full" />
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="py-16 bg-white text-deepblue" id="diferenciais">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12" data-animate="fade-in">Diferenciais</h2>
+      <div class="grid gap-8 md:grid-cols-3" data-animate="fade-in">
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-turquoise mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM9 9h6v6H9V9z"/></svg>
+          <h4 class="font-semibold mb-2">Conveniência</h4>
+          <p>Realize seu tratamento e, enquanto isso, aproveite a infraestrutura de coworking no mesmo prédio.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-turquoise mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zM5 5v14h14V5H5z"/></svg>
+          <h4 class="font-semibold mb-2">Tecnologia de Ponta</h4>
+          <p>Internet fibra gamer, estações de trabalho ergonomicamente equipadas e ambiente climatizado.</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <svg class="w-12 h-12 text-turquoise mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 7v10m5-5H7"/></svg>
+          <h4 class="font-semibold mb-2">Acompanhamento Online</h4>
+          <p>Consultas de acompanhamento via videoconferência, direto da sua estação de trabalho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="py-16 bg-gray-100 text-deepblue" id="depoimentos">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12" data-animate="fade-in">Depoimentos</h2>
+      <div class="grid gap-8 md:grid-cols-2" data-animate="fade-in">
+        <blockquote class="bg-white p-6 rounded-xl shadow-md">
+          <p class="italic mb-4">"A clínica é ótima, mas adorei poder trabalhar enquanto aguardo o procedimento. A internet é super rápida!"</p>
+          <footer class="text-right font-semibold">- Maria F., paciente</footer>
+        </blockquote>
+        <blockquote class="bg-white p-6 rounded-xl shadow-md">
+          <p class="italic mb-4">"A lan house tem tudo que preciso para games e trabalho. O ambiente é super confortável."</p>
+          <footer class="text-right font-semibold">- Carlos P., cliente</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-deepblue text-white py-8" id="rodape">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <h3 class="font-semibold">Contato</h3>
+        <p>Telefone: (11) 9999-9999</p>
+        <p>E‑mail: contato@centrointegrado.com.br</p>
+      </div>
+      <div class="mb-4 md:mb-0">
+        <h3 class="font-semibold">Endereços</h3>
+        <p>Andar 1 – Consultório Odontológico</p>
+        <p>Andar 2 – Lan House / Coworking</p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" aria-label="Instagram" class="hover:text-turquoise"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2C4.79 2 3 3.79 3 6v12c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4H7zm10 2c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h10zm-5 4a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg></a>
+        <a href="#" aria-label="Facebook" class="hover:text-turquoise"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 16.99 22 12z"/></svg></a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-turquoise"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.29c-.97 0-1.75-.79-1.75-1.75S5.53 5.21 6.5 5.21s1.75.79 1.75 1.75S7.47 8.71 6.5 8.71zm13.5 10.29h-3v-4.5c0-1.07-.02-2.44-1.49-2.44-1.5 0-1.73 1.17-1.73 2.36V19h-3v-9h2.88v1.23h.04c.4-.75 1.37-1.55 2.82-1.55 3.02 0 3.58 1.99 3.58 4.58V19z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

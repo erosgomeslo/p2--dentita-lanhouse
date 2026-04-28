@@ -1,0 +1,33 @@
+/* Custom Tailwind extensions and glassmorphism */
+@layer utilities {
+  .bg-glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl;
+  }
+  .text-turquoise-neon {
+    color: #00ffef;
+  }
+  .bg-turquoise-neon {
+    background-color: #00ffef;
+  }
+}
+
+/* Fade‑in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Scroll‑snap for testimonials */
+.testimonial-carousel {
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.testimonial-item {
+  scroll-snap-align: start;
+  flex: 0 0 80%;
+  margin-right: 1rem;
+}
